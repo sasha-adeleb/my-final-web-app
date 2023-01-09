@@ -7,8 +7,8 @@ import { RootTabScreenProps } from '../types';
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to the portfolio of: </Text>
-      <Text style={styles.title}>Sasha Clementine Metz</Text>
+      <Text style={styles.title}>some text</Text>
+      <Text style={styles.title}>hello</Text>
       <View style={styles.separator} lightColor="#B0FC38" darkColor="#B0FC38" />
       <EditScreenInfo path="" />
     </View>
