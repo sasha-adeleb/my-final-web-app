@@ -27,7 +27,7 @@ export default function EditScreenInfo({ path }: { path: string }) {
           style={styles.getStartedText}
           lightColor="rgba(0,0,0,0.8)"
           darkColor="#B0FC38">
-          HTML, CSS, SCSS, JS, REACT, REACT NATIVE, PYTHONE, BABEL, JSON
+          HTML, CSS, SCSS, JS, REACT, REACT NATIVE, PYTHON, BABEL, JSON
         </Text>
 
         
@@ -36,7 +36,13 @@ export default function EditScreenInfo({ path }: { path: string }) {
       <View style={styles.helpContainer}>
         <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
           <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
-            Tap here to get started!
+            About
+            </Text>
+             <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Home
+            </Text>
+             <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Art
             </Text>
         </TouchableOpacity>
       </View>
@@ -47,8 +53,17 @@ export default function EditScreenInfo({ path }: { path: string }) {
 function handleHelpPress() {
   WebBrowser.openBrowserAsync(
     'https://github.com/sasha-adeleb/FInal-Web-App'
+
+    
+    
   );
 }
+
+
+
+
+
+
 
 const styles = StyleSheet.create({
   getStartedContainer: {

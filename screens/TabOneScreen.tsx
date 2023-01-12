@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet , Image, } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
@@ -9,6 +9,14 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
     <View style={styles.container}>
       <Text style={styles.title}>some text</Text>
       <Text style={styles.title}>hello</Text>
+      <Image
+      style={{height:200, width:'100%'}}
+source={{uri:'https://www.flickr.com'}}
+      />
+ <Image
+      style={{height:200, width:'100%'}}
+source={{uri:'http://go237.com/wp-content/uploads/2019/12/1470399671_SEO.png'}}
+      />
       <View style={styles.separator} lightColor="#B0FC38" darkColor="#B0FC38" />
       <EditScreenInfo path="" />
     </View>
